@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    background: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+}
+
+.instruction {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.keyboard {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    background: #004134;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: bottom 0.4s;
+}
+
+.keyboard--hidden {
+    bottom: -100%;
+}
+
+.key {
+    padding: 10px;
+    border: 1px solid #444;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+
+.key.error {
+    background: #ff6b6b;
+    border-color: #ff4545;
+}
+
+#instruction, #result {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+#startBtn, #resetBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
